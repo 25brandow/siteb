@@ -1,2 +1,3 @@
 # 25brandow.github.io
-Site 25brandow
+Criação de modelos de site
+Usando html, css e js
