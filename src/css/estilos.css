@@ -166,16 +166,16 @@ main .cartao-pokemon{
         background-color: #a6b91a;
     }
 
-    dialog{
+    descricao{
         height: 30px;
         color: white;
         font-size: 14px;
         padding-right: 10px;
     }    
 
-    /* main .descricao{
+    main .descricao{
         max-height: 80px;
         overflow-y: scroll;
         font-size: 14px;
         padding-right: 10px;
-    } */
+    }
