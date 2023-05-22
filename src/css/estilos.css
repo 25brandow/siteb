@@ -1,151 +1,197 @@
-body{
-    font-family: 'Poppins', sans-serif;
-    max-width: 1280px;
-    margin: 0 auto;
-    /* background-color: #5e5b5bad; */
-    color: #333333;
+<!DOCTYPE html>
+<html lang="en">
 
-    background: linear-gradient(45deg, blue, rgb(77, 189, 241), blue, rgb(105, 235, 105), rgb(233, 196, 127));
-    background-size: 300% 400%;
-    animation: colors 12s ease infinite;
-  }
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem Pokemon</title>
 
-  @keyframes colors {
-    0% {
-      background-position: 0% 50%;
-    }
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet" />
 
-    50% {
-      background-position: 100% 50%;
-    }
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/scrollbar.css">
+</head>
 
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+<body>
+    <div class="cointainer">
+    <header>
+        <div class="logo">        
+            <span>Cripto Cassino</span>
+        </a>
+        </div>    
+        
+            <ul class="m">            
+                <li id="01"><a href="#" title="Inicio">Cassino</a></li>
+                <li id="01"><a href="#" title="Inicio">Artigos</a></li>
+                <li id="01"><a href="#" title="Inicio">Simulador</a></li>
+                <li id="01"><a href="#" title="Inicio">Sobre</a></li>
+            </ul>        
+    </header> <!--cabeçalho-->
 
+    <main> <!--conteudo principal-->
+        <ul class="listagem-pokemon"> <!--ul lista desordenada | ol lista ordenada-->
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Betfury</span>
+                    <span>#001</span>
+                </div>
+                <img src="../pokemon/src/imagens/betfury.gif" alt="Betfury" class="gif">
 
-}
+                <ul class="tipos">
+                    <li class="tipo sites">Site</li>
+                    <li class="tipo leiamais">Slots</li>
+                </ul>
 
-body.modo-escuro{
-    background-color: #212121;
-    color: #f5f5f5;
-}
+                <dialog>Betfury é uma plataforma de jogos de azar e apostas online baseada em criptomoedas. Lançada em 2019, ela se destaca por oferecer uma variedade de jogos de cassino, como caça-níqueis, jogos de mesa, loteria e muito mais. A plataforma aceita várias criptomoedas populares, incluindo Bitcoin (BTC), Ethereum (ETH), Binance Coin (BNB) e TRON (TRX).</dialog>
+            </li>
 
-header{
-    background: rgba(0, 128, 0, 0);
-    display: flex;
-    justify-content: space-between;
-    padding: 25px;
-}
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Windice</span>
+                    <span>#002</span>
+                </div>
+                <img src="./src/imagens/windice.svg" alt="Windice" class="svg">
 
-header .logo,
-header .imagem-botao{
-    width: 30px;
-    transition: 0.2s ease;
-}
+                <ul class="tipos">
+                    <li class="tipo sites">Site</li>
+                    <li class="tipo leiamais">Slots</li>
+                </ul>
 
-header #botao-alterar-tema{
-    background: none;
-    border: none;
-}
+                <p class="descricao">Windice é uma plataforma online de jogos baseada em criptomoedas, que oferece uma variedade de jogos de cassino populares, como dados, roleta e caça-níqueis.</p>
+            </li>
 
-header .logo:hover,
-header .imagem-botao:hover,
-main .cartao-pokemon:hover{
-    transform: scale(1.05);
-    cursor: pointer;
-}
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>DuckDice</span>
+                    <span>#003</span>
+                </div>
+                <img src="./src/imagens/pato.svg" alt="Duckdice" class="gif">
 
-main{
-    background-color: antiquewhite;
-    padding: 25px;
-}
+                <ul class="tipos">
+                    <li class="tipo sites">Site</li>
+                    <li class="tipo leiamais">Sports</li>
+                </ul>
 
-main .listagem-pokemon{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-}
+                <p class="descricao">DuckDice é uma plataforma de jogo de dados (dice game) online que usa criptomoedas como Bitcoin, Litecoin, Ethereum, Dogecoin e várias outras moedas digitais. É um site de apostas onde os jogadores podem apostar sua criptomoeda em um jogo de dados virtual para ter a chance de ganhar mais moedas.</p>
+            </li>
 
-main .cartao-pokemon{
-    background-color: #075493;
-    width: 200px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    border-radius: 15px;
-    transition: 0.2s ease-in-out;
-    color:#f5f5f5;
-    }
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Primedice</span>
+                    <span>#004</span>
+                </div>
+                <img src="./src/imagens/prime.gif" alt="Primedice" class="gif">
 
-    main .cartao-pokemon:hover{
-        background-color: #96d9d6;
-    }
+                <ul class="tipos">
+                    <li class="tipo sites">Site</li>
+                    <li class="tipo leiamais">Sports</li>
+                </ul>
 
-    .modo-escuro .cartao-pokemon{
-        background-color: #a8a8a8;
-    }
+                <p class="descricao">Primedice é uma plataforma online de jogos de azar que se concentra principalmente em apostas de criptomoedas, mais especificamente Bitcoin. É um dos primeiros e mais populares cassinos de criptomoedas do mundo.</p>
+            </li>
 
-    main .cartao-pokemon .informacoes{
-        display: flex;
-        justify-content: space-between;
-        border: 1px solid #333333;
-        border-radius: 10px;
-    }
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Stake</span>
+                    <span>#005</span>
+                </div>
+                <img src="./src/imagens/Stake.svg" alt="Stake" class="svg">
 
-    main .cartao-pokemon .informacoes span{
-        padding: 5px;
-        text-transform: uppercase;
-        font-size: 17px;
-    }
+                <ul class="tipos">
+                    <li class="tipo sites">Site</li>
+                    <li class="tipo leiamais">Sports</li>
+                </ul>
 
-    main .cartao-pokemon .gif{
-        width: 70px;
-        height: 70px;
-    }
+                <p class="descricao">Tem preferência por coisas quentes. Quando chove, diz-se que o vapor jorra da ponta
+                    de sua cauda.</p>
+            </li>
 
-    main .cartao-pokemon .svg{
-        width: 70px;
-        height: 70px;
-    }
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Charizard</span>
+                    <span>#006</span>
+                </div>
+                <img src="./src/imagens/charizard.gif" alt="Charizard" class="gif">
 
-    main .cartao-pokemon .tipos{
-    display: flex;
-    gap: 15px;
-    }
+                <ul class="tipos">
+                    <li class="tipo sites">Site</li>
+                    <li class="tipo leiamais">Sports</li>
+                </ul>
 
-    main .cartao-pokemon .tipo{
-        padding: 8px;
-        border-radius: 10px;
-        }
+                <p class="descricao">Tem preferência por coisas quentes. Quando chove, diz-se que o vapor jorra da ponta
+                    de sua cauda.</p>
+            </li>
 
-    .sites{
-        background-color: #7ac74c;
-    }
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Squirtle</span>
+                    <span>#007</span>
+                </div>
+                <img src="./src/imagens/squirtle.gif" alt="Squirtle" class="gif">
 
-    .leiamais{
-        background-color: #eb366c;
-        }
+                <ul class="tipos">
+                    <li class="tipo sites">Site</li>
+                    <li class="tipo leiamais">Sports</li>
+                </ul>
 
-    .fogo{
-        background-color: #51e0eb;
-    }
+                <p class="descricao">Tem preferência por coisas quentes. Quando chove, diz-se que o vapor jorra da ponta
+                    de sua cauda.</p>
+            </li>
 
-    .agua{
-        background-color: #6390f0; 
-    }
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Wartortle</span>
+                    <span>#008</span>
+                </div>
+                <img src="./src/imagens/wartortle.gif" alt="Wartortle" class="gif">
 
-    .inseto{
-        background-color: #a6b91a;
-    }
+                <ul class="tipos">
+                    <li class="tipo sites">Site</li>
+                    <li class="tipo leiamais">Sports</li>
+                </ul>
 
-    main .descricao{
-        max-height: 80px;
-        overflow-y: scroll;
-        font-size: 14px;
-        padding-right: 10px;
-    }
+                <p class="descricao">Tem preferência por coisas quentes. Quando chove, diz-se que o vapor jorra da ponta
+                    de sua cauda.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Blastoise</span>
+                    <span>#009</span>
+                </div>
+                <img src="./src/imagens/blastoise.gif" alt="Blastoise" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo sites">Site</li>
+                    <li class="tipo leiamais">Sports</li>
+                </ul>
+
+                <p class="descricao">Tem preferência por coisas quentes. Quando chove, diz-se que o vapor jorra da ponta
+                    de sua cauda.</p>
+            </li>
+
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Caterpie</span>
+                    <span>#009</span>
+                </div>
+                <img src="./src/imagens/caterpie.gif" alt="Caterpie" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo sites">Site</li>
+                    <li class="tipo leiamais">Sports</li>
+                </ul>
+
+                <p class="descricao">Tem preferência por coisas quentes. Quando chove, diz-se que o vapor jorra da ponta
+                    de sua cauda.</p>
+            </li>
+        </ul>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
